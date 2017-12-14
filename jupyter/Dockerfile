@@ -19,7 +19,7 @@ WORKDIR /tmp
 RUN wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py
 
-RUN pip install --no-cache-dir latex geopandas folium
+RUN pip install --no-cache-dir latex geopandas folium seaborn
 
 # Switch back to NB_USER to avoid accidental container runs as root
 USER $NB_USER
