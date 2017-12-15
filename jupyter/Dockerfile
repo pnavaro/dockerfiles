@@ -11,6 +11,7 @@ RUN apt-get update && apt-get -yq dist-upgrade \
     rsync \
     texlive-latex-recommended \
     texlive-fonts-recommended \
+    texlive-lang-french \
     zip \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
