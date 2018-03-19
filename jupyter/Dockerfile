@@ -21,7 +21,7 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py
 
 ADD requirements.txt .
-RUN pip install --no-cache-dir -r jupyter/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 RUN python3 -m bash_kernel.install
 
