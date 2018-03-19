@@ -1,0 +1,7 @@
+latex
+h5py
+geopandas
+folium
+seaborn
+bookbook
+bash_kernel

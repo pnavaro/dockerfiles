@@ -20,12 +20,8 @@ WORKDIR /tmp
 RUN wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py
 
-RUN pip install --no-cache-dir latex \
-                               geopandas \
-                               folium \
-                               seaborn \
-                               bookbook \
-                               bash_kernel
+ADD requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 RUN python3 -m bash_kernel.install
 
