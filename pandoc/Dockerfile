@@ -8,10 +8,9 @@ RUN apt-get update --fix-missing && \
     pandoc \
     texlive-xetex \
     texlive-fonts-extra \
-    texlive-math-extra
-
-RUN apt-get clean && \
-rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    texlive-math-extra && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN useradd -m -s /bin/bash euler
 ENV HOME /home/euler
