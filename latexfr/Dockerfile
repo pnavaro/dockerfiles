@@ -6,11 +6,8 @@ RUN apt-get update --fix-missing && \
     latexmk \
     texlive-lang-french \
     locales \
-    vim
-
-  # Removing documentation packages *after* installing them is kind of hacky,
-  # but it only adds some overhead while building the image.
-RUN apt-get --purge remove -y .\*-doc$ && \
+    vim && \
+    apt-get --purge remove -y .\*-doc$ && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
