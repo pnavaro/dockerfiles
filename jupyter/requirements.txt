@@ -5,3 +5,4 @@ folium
 seaborn
 bookbook
 bash_kernel
+pytest
