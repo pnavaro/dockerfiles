@@ -5,6 +5,7 @@ LABEL maintainer="Matthieu Boileau <matthieu.boileau@math.unistra.fr>"
 
 RUN apt-get update --fix-missing && \
     apt-get install -y \ 
+    make \
     pandoc \
     texlive-xetex \
     texlive-fonts-extra \
