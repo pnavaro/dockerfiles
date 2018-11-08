@@ -1,5 +1,5 @@
-FROM ubuntu:latest
-ENV REFRESHED_AT 2017-12-11
+FROM ubuntu:16.04
+ENV REFRESHED_AT 2018-11-08
 
 LABEL maintainer="Matthieu Boileau <matthieu.boileau@math.unistra.fr>"
 
