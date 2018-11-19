@@ -1,8 +1,10 @@
 latex
 h5py
 geopandas
+geocoder
 folium
 seaborn
 bookbook
 bash_kernel
 pytest
+wordcloud
