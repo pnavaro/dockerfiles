@@ -16,9 +16,20 @@ RUN apt-get update && apt-get -yq dist-upgrade \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+# PATH to pip executable
+ENV PATH=~/.local/bin:$PATH
+
+# ---
+# Manual installation of pyproj due to https://github.com/jswhit/pyproj/issues/136
+# May be removed when issue is closed
+RUN pip install --no-cache-dir cython
+
 WORKDIR /tmp
-RUN wget https://bootstrap.pypa.io/get-pip.py && \
-    python3 get-pip.py
+RUN git clone https://github.com/jswhit/pyproj.git && \
+    cd pyproj && \
+    python setup.py build && \
+    python setup.py install
+# ---
 
 ADD requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
