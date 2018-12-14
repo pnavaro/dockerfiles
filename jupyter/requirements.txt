@@ -1,9 +1,12 @@
+appmode
 bash_kernel
 bookbook
 folium
 geocoder
 geopandas
 h5py
+IPython
+ipywidgets
 jupyter_contrib_nbextensions
 latex
 numpy
