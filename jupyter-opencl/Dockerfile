@@ -14,9 +14,9 @@ RUN apt-get update && apt-get -yq dist-upgrade \
  && rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 /usr/lib/libOpenCL.so
-ADD requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
 
 # Switch back to NB_USER to avoid accidental container runs as root
 USER $NB_USER
+ADD requirements.txt /tmp
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
 WORKDIR $HOME/work
