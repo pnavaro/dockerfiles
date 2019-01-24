@@ -38,5 +38,4 @@ RUN useradd -ms /bin/bash latex
 USER latex
 WORKDIR /home/latex
 
-USER root
 CMD /bin/bash
