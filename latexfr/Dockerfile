@@ -27,6 +27,8 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 
 RUN apt-get update && \
     apt-get install -y \ 
+    texlive-bibtex-extra \
+    texlive-science \
     texlive-latex-extra && \
     apt-get --purge remove -y .\*-doc$ && \
     apt-get clean && \
@@ -36,4 +38,5 @@ RUN useradd -ms /bin/bash latex
 USER latex
 WORKDIR /home/latex
 
+USER root
 CMD /bin/bash
