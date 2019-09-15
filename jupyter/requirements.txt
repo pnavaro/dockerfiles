@@ -7,10 +7,14 @@ geopandas
 h5py
 IPython
 ipywidgets
+jinja2
 jupyter_contrib_nbextensions
 latex
+markdown
 numpy
 pandas
 pytest
+rise
 seaborn
+pyyaml
 wordcloud
