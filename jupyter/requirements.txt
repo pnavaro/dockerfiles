@@ -1,6 +1,7 @@
 appmode
 bash_kernel
 bookbook
+bs4
 folium
 geocoder
 geopandas
