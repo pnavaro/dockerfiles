@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 LABEL maintainer="Matthieu Boileau <matthieu.boileau@math.unistra.fr>"
 
 RUN echo "Europe/Paris" > /etc/timezone
@@ -29,6 +29,7 @@ RUN apt-get update && \
     apt-get install -y \ 
     texlive-bibtex-extra \
     texlive-science \
+    texlive-fonts-extra \
     texlive-latex-extra && \
     apt-get --purge remove -y .\*-doc$ && \
     apt-get clean && \
