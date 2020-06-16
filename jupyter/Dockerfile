@@ -8,6 +8,7 @@ USER root
 
 RUN apt-get update && apt-get -yq dist-upgrade \
  && apt-get install -yq --no-install-recommends \
+    curl \
     rsync \
     texlive-latex-recommended \
     texlive-fonts-recommended \
