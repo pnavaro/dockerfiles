@@ -2,7 +2,7 @@ FROM jupyter/minimal-notebook
 
 # From Jupyter Project <jupyter@googlegroups.com>
 
-LABEL maintainer="Matthieu Boileau <matthieu.boileau@math.unistra.fr>"
+LABEL maintainer="Pierre Navaro <navaro@math.cnrs.fr>"
 
 USER root
 
