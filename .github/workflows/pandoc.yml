@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file pandoc/Dockerfile --tag pnavaro/pandoc:latest
+      run: docker build pandoc --tag pnavaro/pandoc:latest
