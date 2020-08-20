@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook
+FROM jupyter/datascience-notebook
 
 # From Jupyter Project <jupyter@googlegroups.com>
 
