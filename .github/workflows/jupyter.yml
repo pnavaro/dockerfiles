@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        cp jupyter/requirements.txt .
-        docker build jupyter --tag pnavaro/jupyter:latest
+        cd jupyter
+        docker build . --tag pnavaro/jupyter:latest
