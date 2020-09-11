@@ -15,6 +15,7 @@ markdown
 numpy
 pandas
 pytest
+py-heat-magic
 rise
 seaborn
 pyyaml
