@@ -19,7 +19,7 @@ RUN apt-get update && apt-get -yq dist-upgrade \
 
 # PATH to pip executable
 ENV PATH=~/.local/bin:$PATH
-ADD jupyter/requirements.txt .
+ADD requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN python3 -m bash_kernel.install
