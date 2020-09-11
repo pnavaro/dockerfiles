@@ -17,4 +17,6 @@ jobs:
     - name: Build the Docker image
       run: |
         cd jupyter
+        mkdir jupyter
+        cp requirements.txt jupyter
         docker build . --tag pnavaro/jupyter:latest
