@@ -10,6 +10,8 @@ IPython
 ipywidgets
 jinja2
 jupyter_contrib_nbextensions
+jupyter-book
+jupytext
 latex
 markdown
 numpy
