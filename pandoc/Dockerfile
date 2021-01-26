@@ -22,6 +22,4 @@ ENV HOME /home/euler
 RUN chown -R euler:euler /home/euler
 USER euler
 WORKDIR $HOME
-RUN pip3 install --user mkdocs jupyter-book
-
 CMD /bin/bash
