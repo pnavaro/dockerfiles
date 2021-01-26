@@ -9,6 +9,7 @@ RUN apt-get update --fix-missing && \
     apt-get install -yq \ 
     make \
     pandoc \
+    latexmk \
     texlive-xetex \
     texlive-lang-french \
     texlive-fonts-extra \
