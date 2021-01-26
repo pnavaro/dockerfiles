@@ -12,6 +12,7 @@ RUN apt-get update --fix-missing && \
     texlive-xetex \
     texlive-lang-french \
     texlive-fonts-extra \
+    python3-venv \
     python3-pip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
