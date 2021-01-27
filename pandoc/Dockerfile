@@ -7,7 +7,7 @@ ENV REFRESHED_AT 2016-07-01
 
 RUN apt-get update --fix-missing && \
     apt-get install -yq \ 
-    make \
+    make locales \
     pandoc \
     latexmk texlive-xetex texlive-lang-french texlive-fonts-extra \
     python3-dev python3-wheel python3-venv python3-pip && \
@@ -18,5 +18,9 @@ RUN useradd -m -s /bin/bash euler
 ENV HOME /home/euler
 RUN chown -R euler:euler /home/euler
 USER euler
+RUN locale-gen en_US.UTF-8  
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8  
 WORKDIR $HOME
 CMD /bin/bash
