@@ -10,5 +10,5 @@ RUN apt-get update && apt-get -yq dist-upgrade \
       ca-certificates build-essential git cmake g++ gfortran \
       liblapack-dev  libsuitesparse-dev \
       libopenmpi-dev openmpi-bin libhdf5-openmpi-dev \
-      libfftw3-dev libopenblas-dev doxygen graphviz \
+      libfftw3-dev libopenblas-dev doxygen graphviz ghostscript \
       latexmk texlive-xetex texlive-lang-french texlive-fonts-extra
